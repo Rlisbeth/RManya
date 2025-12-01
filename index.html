@@ -3,8 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Mi pagina web </title>
-
+  <title>Mi página web</title>
 
   <style>
     /* ----- ESTILOS GENERALES ----- */
@@ -121,6 +120,31 @@
       transform: translateY(-5px);
     }
 
+    /* ----- VIDEO ----- */
+    .video-section {
+      padding: 80px 40px;
+      text-align: center;
+    }
+
+    .video-section h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 30px;
+    }
+
+    iframe {
+      border-radius: 20px;
+      width: 80%;
+      max-width: 800px;
+      height: 450px;
+      border: none;
+    }
+
     /* ----- CONTACTO ----- */
     .contacto {
       padding: 80px 40px;
@@ -149,14 +173,15 @@
     <nav>
       <a href="#inicio">Inicio</a>
       <a href="#servicios">Servicios</a>
+      <a href="#video">Video</a>
       <a href="#contacto">Contacto</a>
     </nav>
   </header>
 
   <!-- HERO -->
   <section id="inicio" class="hero">
-    <h1>Bienvenido a Mi Landing Page Moderna</h1>
-    <p>Una página web elegante, responsiva y animada. Lista para usar como portafolio, negocio, curso o proyecto personal.</p>
+    <h1>Bienvenido a Mi pagina web</h1>
+    <p>Una página web elegante, responsiva y animada. Lista para usar como portafolio, negocio o proyecto personal.</p>
     <button class="btn">Comenzar</button>
   </section>
 
@@ -180,14 +205,31 @@
     </div>
   </section>
 
+  <!-- VIDEO -->
+  <section id="video" class="video-section">
+    <h2>Video Destacado</h2>
+    <p>Mira este contenido recomendado:</p>
+
+    <div class="video-container">
+      <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/WUYqYma1qmw?si=u6fKJWQTz_sGr-YN"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        referrerpolicy="strict-origin-when-cross-origin"
+        allowfullscreen>
+      </iframe>
+    </div>
+  </section>
+
   <!-- CONTACTO -->
   <section id="contacto" class="contacto">
     <h2>Contacto</h2>
-    <p>Escríbeme a: <strong>tucorreo@example.com</strong></p>
+    <p>Escríbeme a: <strong>karina.manya@espoch.edu.ec</strong></p>
   </section>
 
   <footer>
-    © 2025 - Mi Landing Page Moderna
+    © 2025 - Mi pagina web
   </footer>
 
 </body>
